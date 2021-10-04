@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take 1 Code Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cool.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <!-- navbar section  -->
+    <div class="topnav">
+      <a href="#" class="active" href="#home"
+        ><img src="./images/logo.PNG" alt="logo" width="50vw"
+      /></a>
+      <a href="#" id="title">Take 1 Code Club</a>
+      <div class="topnav-right">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <!-- welcome section  -->
+    <div class="welcome common">
+      <h1 id="welcome_text" style="height: 5vh"></h1>
+<br>
+      <img
+        class="mySlides"
+        src="./images/welcome.PNG"
+        alt="welcome_card"
+        width="400vw"
+        height="300vh"
+      />
+      <img
+        class="mySlides"
+        src="./images/logo.PNG"
+        alt="logo"
+        width="400vw"
+        height="300vh"
+      />
+      <img
+        class="mySlides"
+        src="./images/sdiet.jpg"
+        alt="sdiet"
+        width="400vw"
+        height="300vh"
+      />
+    </div>
+
+    <!-- about section  -->
+    <div class="about common" id="about">
+      <h2>About Us</h2>
+      <p>
+        We are a group of coding enthusiast from Satyug Darshan Institute of
+        Engineering and Technology, Faridabad <br />
+        Our Founder Mr. BITTU SINGH came up with a brilliant idea i.e., a senior
+        year student investing time and efforts in 1 student of their choice
+        <br />
+        of their domain. <br />The major aim of this club is to guide those
+        student who don't have the right exposure of their domain. <br />
+      </p>
+    </div>
+
+    <!-- contact form -->
+    <div class="contact" id="contact">
+      <h2 style="text-align: center">Contact Form</h2>
+
+      <div class="container">
+        <form class="contact-form" onsubmit="modelVisible">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+            required
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="m_number">Mobile Number</label>
+          <input
+            type="text"
+            id="m_number"
+            name="mobile_number"
+            placeholder="Your Mobile Number.."
+          />
+
+          <label for="e_mail">Email id</label>
+          <input
+            type="email"
+            id="e_mail"
+            name="email"
+            placeholder="Your Email.."
+            required
+          />
+          <br /><br />
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+            required
+          ></textarea>
+
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Thank You for Visiting T1CC</h2>
+        </div>
+        <div class="modal-body">
+          <a href="https://t.me/Take1CodeClub"
+            ><img
+              src="./images/telegram-logo-944.png"
+              alt="telegram"
+              width="100"
+              style="padding: 0px 10px 0px 10px"
+          /></a>
+          <a href="https://www.linkedin.com/company/take-1-code-club"
+            ><img
+              src="/images/linkedin-logo-png-1825.png"
+              alt="linkedin"
+              width="100"
+              style="padding: 0px 10px 0px 10px"
+          /></a>
+        </div>
+        <div class="modal-footer">
+          <h3>We'll get to you soon...</h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer-basic">
+      <footer>
+        <hr style="border: 1px solid; color: rgb(180, 175, 175)" />
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="https://www.satyug.edu.in/" target="_blank">Our College</a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.linkedin.com/in/bittu-singh-2903/"
+              target="_blank"
+              >Our Founder</a
+            >
+          </li>
+        </ul>
+        <p class="copyright">Take1CodeClub © 2021</p>
+      </footer>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+
+    <script src="script.js"></script>
+    <script src="firebase.js"></script>
+  </body>
+</html>
